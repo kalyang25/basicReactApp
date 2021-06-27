@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "noImplicitAny": true,
+      "module": "es6",
+      "target": "es5",
+      "removeComments": false,
+      "jsx": "react",
+      "allowJs": true,
+      "moduleResolution": "Node",
+      "rootDirs": ["src"],
+      "baseUrl": "src",
+      "esModuleInterop": true,
+      "paths": {
+          "components/*": ["components/*"],
+          "containers/*": ["containers/*"],
+          "views/*": ["views/*"],
+          "test-utils": ["./utils/test-utils"]
+      },
+      "skipLibCheck": true, // skip type checking in declaration files (*.d.ts files)
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+  }
